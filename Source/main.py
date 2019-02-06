@@ -66,12 +66,12 @@ def Main():
 
     s.close()
 
-
+'''
 def sendToOthers(data):
     for element in connectionList:
         element.send(data)
 
-
+'''
 
 if __name__ == '__main__':
     Main()
