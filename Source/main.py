@@ -31,7 +31,7 @@ def accept_incoming_connections():
 def handle_client(client):
     # Takes client socket argument.
     name = client.recv(BUFSIZ).decode("utf8")
-    welcome = 'Welcome %s! If you ever want to quit, type {quit} to exit.' % name
+    welcome = 'Welcome %s! If you ever want to quit, type {quit} to exit or press the disconnect button in your toolbar.' % name
     client.send(bytes(welcome, "utf8"))
     msg = "%s has joined the chat!" % name
     broadcast(bytes(msg, "utf8"))
