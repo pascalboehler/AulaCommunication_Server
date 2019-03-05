@@ -6,12 +6,23 @@
 # Imports
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
+import argparse
+
+# Set up the argument parser
+parser = argparse.ArgumentParser()
+
+# Add the arguments (--help is included by default)
+parser.add_argument("-p", "--Port", help="Hands over the port the server listens on for new connections (Standard 33000)", default=33000, type=int)
+
+
+# Parse the arguments (make them useable)
+args = parser.parse_args()
 
 clients = {}
 addresses = {}
 
 HOST = ''
-PORT = 33000
+PORT = args.Port
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 SERVER = socket(AF_INET, SOCK_STREAM)
