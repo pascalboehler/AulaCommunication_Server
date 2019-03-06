@@ -2,6 +2,7 @@
 This project is published under the GNU General Public License v3.0
 
 The server needed to run the AulaCommunication Client (https://github.com/pascalboehler/AulaCommunication_Client)
+
 A docker container of this project is available under https://hub.docker.com/r/pboehler/aulacommunication
 
 # Get started
