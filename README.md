@@ -15,5 +15,5 @@ The server needed to run the AulaCommunication Client
 * -h or --help => Opens the help section of the proheam
 
 # Future
-* The server will be put inside a docker container
+* Nothing to do!
 
