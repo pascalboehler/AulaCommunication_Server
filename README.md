@@ -12,7 +12,7 @@ A docker container of this project is available under https://hub.docker.com/r/p
 ## Run the server with docker
 1. Run docker create pboehler/aulacommunivation:latest to download the server image and create a new container
 2. run "docker run -it -p 33000:33000/tcp --name serverAulaeComm pboehler/aulacommunication:latest" to start the server interactive, allocate port 33000 for the new container and name it serverPi
-
+__IMPORTANT:__ If you run the server on a raspberry pi use the :arm64 tag. otherwise it is not working at all!
 # Help
 ## The command line arguments for this programm
 * -p or --Port => Sets up the port for the session (default is port 33000 if no arg is parsed)
