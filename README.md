@@ -10,8 +10,8 @@ A docker container of this project is available under https://hub.docker.com/r/p
 1. Clone this repository
 2. Run python3 main.py in the Source folder
 ## Run the server with docker
-1. Run docker create pboehler/aulacommunivation:latest to download the server image and create a new container
-2. run "docker run -it -p 33000:33000/tcp --name serverAulaeComm pboehler/aulacommunication:latest" to start the server interactive, allocate port 33000 for the new container and name it serverPi
+1. Run "docker create pboehler/aulacommunivation:latest" to download the server image and create a new container
+2. Run "docker run -it -p 33000:33000/tcp --name serverAulaeComm pboehler/aulacommunication:latest" to start the server interactive, allocate port 33000 for the new container and name it serverPi
 __IMPORTANT:__ If you run the server on a raspberry pi use the :arm64 tag. otherwise it is not working at all!
 # Help
 ## The command line arguments for this programm
