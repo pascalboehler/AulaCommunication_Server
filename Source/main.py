@@ -50,8 +50,10 @@ def handle_client(client):
     while True:
         msg = client.recv(BUFSIZ)
         if msg != bytes("{quit}", "utf8"):
+            # if the message is not {quit}, send the received message to all other clients
             broadcast(msg, name+": ")
         else:
+            # if the client quits a message will be send to all connected clients.
             client.send(bytes("{quit}", "utf8"))
             client.close()
             del clients[client]
